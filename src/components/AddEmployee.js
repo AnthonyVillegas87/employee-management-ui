@@ -30,6 +30,34 @@ export const AddEmployee = () => {
                     <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
+                <div className="items-center justify-center h-14 w-full my-4">
+                    <label className="block text-slate-600 text-sm font-normal">
+                        Job Title
+                    </label>
+                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                </div>
+
+                <div className="items-center justify-center h-14 w-full my-4">
+                    <label className="block text-slate-600 text-sm font-normal">
+                        Department
+                    </label>
+                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                </div>
+
+                <div className="items-center justify-center h-14 w-full my-4">
+                    <label className="block text-slate-600 text-sm font-normal">
+                        Hire Date
+                    </label>
+                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                </div>
+
+                <div className="items-center justify-center h-14 w-full my-4">
+                    <label className="block text-slate-600 text-sm font-normal">
+                       Salary
+                    </label>
+                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                </div>
+
                 <div className="items-center justify-center h-14 w-full my-4 space-x-64 pt-4">
                     {/*<button className="rounded text-white font-semibold py-2 px-2 bg-gray-500 hover:bg-gray-800">*/}
                     {/*    Save*/}
@@ -45,7 +73,8 @@ export const AddEmployee = () => {
                     </button>
 
                     <button className="group relative">
-                        <div className="relative z-10 inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-red-500 px-6 font-medium text-neutral-600 transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3 group-active:translate-x-0 group-active:translate-y-0">
+                        <div
+                            className="relative z-10 inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-red-500 px-6 font-medium text-neutral-600 transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3 group-active:translate-x-0 group-active:translate-y-0">
                             Clear
                         </div>
                         <div
