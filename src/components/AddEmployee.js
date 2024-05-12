@@ -1,6 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 
 export const AddEmployee = () => {
+
+
+    const [employee, setEmployee] = useState({
+        id: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+        jobTitle: "",
+        department: "",
+        hireDate: "",
+        salary: ""
+    })
+
     return (
         <div className="flex max-w-2xl mx-auto shadow border-b">
             <div className="px-8 py-8">
@@ -13,49 +26,49 @@ export const AddEmployee = () => {
                     <label className="block text-slate-600 text-sm font-normal">
                         First Name
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="firstName" value={employee.firstName} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4">
                     <label className="block text-slate-600 text-sm font-normal">
                         Last Name
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="lastName" value={employee.lastName} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4">
                     <label className="block text-slate-600 text-sm font-normal">
                         Email
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="email" value={employee.email} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4">
                     <label className="block text-slate-600 text-sm font-normal">
                         Job Title
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="jobTitle" value={employee.jobTitle} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4">
                     <label className="block text-slate-600 text-sm font-normal">
                         Department
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="department" value={employee.department} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4">
                     <label className="block text-slate-600 text-sm font-normal">
                         Hire Date
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="hireDate" value={employee.hireDate} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4">
                     <label className="block text-slate-600 text-sm font-normal">
                        Salary
                     </label>
-                    <input type="text" className="h-10 w-96 border mt-2 px-2 py-2"/>
+                    <input type="text" name="salary" value={employee.salary} className="h-10 w-96 border mt-2 px-2 py-2"/>
                 </div>
 
                 <div className="items-center justify-center h-14 w-full my-4 space-x-64 pt-4">
