@@ -20,6 +20,11 @@ export const AddEmployee = () => {
         setEmployee({...employee,[e.target.name]: value})
     }
 
+    const saveEmployee = (e) => {
+        e.preventDefault();
+
+    }
+
     return (
         <div className="flex max-w-2xl mx-auto shadow border-b">
             <div className="px-8 py-8">
@@ -82,7 +87,7 @@ export const AddEmployee = () => {
                     {/*    Save*/}
                     {/*</button>*/}
 
-                    <button className="group relative">
+                    <button onClick={saveEmployee} className="group relative">
                         <div
                             className="relative z-10 inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-green-400 px-6 font-medium text-neutral-600 transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3 group-active:translate-x-0 group-active:translate-y-0">
                             Save
