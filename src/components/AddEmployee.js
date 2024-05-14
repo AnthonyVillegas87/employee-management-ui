@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import EmployeeService from "../services/EmployeeService";
 
 export const AddEmployee = () => {
 
@@ -22,7 +23,12 @@ export const AddEmployee = () => {
 
     const saveEmployee = (e) => {
         e.preventDefault();
-
+        EmployeeService.saveEmployee(employee)
+            .then((response) => {
+                console.log(response);
+            }).catch((error) => {
+            console.log(error);
+        });
     }
 
     return (
